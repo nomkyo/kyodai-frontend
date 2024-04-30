@@ -15,6 +15,7 @@
     "lib": ["es2018", "dom"],
     "useDefineForClassFields": false
   },
+  "include": ["./cypress.config.ts"],
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
