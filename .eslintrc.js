@@ -1,3 +1,5 @@
+import js from "@eslint/js";
+
 module.exports = {
   root: true,
   overrides: [
@@ -17,6 +19,7 @@ module.exports = {
       extends: [
         "plugin:@angular-eslint/recommended",
         "plugin:@typescript-eslint/recommended",
+        "eslint:recommended",
         "prettier",
       ],
       rules: {
