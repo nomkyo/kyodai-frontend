@@ -17,7 +17,6 @@ module.exports = {
       extends: [
         "plugin:@angular-eslint/recommended",
         "plugin:@typescript-eslint/recommended",
-        "eslint:recommended",
         "prettier",
       ],
       rules: {
