@@ -7,6 +7,7 @@ export class ConfigService {
   constructor(private http: HttpClient) {}
   getHello() {
     debugger;
+
     return this.http.get<object>(environment.apiBaseUrl);
   }
 }
