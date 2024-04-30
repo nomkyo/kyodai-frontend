@@ -1,5 +1,3 @@
-import js from "@eslint/js";
-
 module.exports = {
   root: true,
   overrides: [
