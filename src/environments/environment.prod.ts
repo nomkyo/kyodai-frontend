@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiBaseUrl: 'https://staging.nomurakyodai.org',
+  apiBaseUrl: 'https://kyodai-backend.onrender.com',
 };
