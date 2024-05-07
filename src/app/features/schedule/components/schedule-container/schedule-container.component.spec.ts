@@ -4,11 +4,11 @@ import {
 } from '@angular/common/http/testing';
 import { ScheduleContainerComponent } from './schedule-container.component';
 import { Spectator, byTestId, createComponentFactory } from '@ngneat/spectator';
-import { League } from '../league.model';
+import { League } from '../../../../core/models/league.model';
 import { faker } from '@faker-js/faker';
 import { By } from '@angular/platform-browser';
 import { MatOption, MatSelect } from '@angular/material/select';
-import { Game } from '../game.model';
+import { Game } from '../../../../core/models/game.model';
 
 describe('ScheduleContainer', () => {
   let spectator: Spectator<ScheduleContainerComponent>;

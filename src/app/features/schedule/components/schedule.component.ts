@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ScheduleService } from '../schedule.service';
-import { Game } from '../game.model';
+import { ScheduleService } from '../services/schedule.service';
+import { Game } from '../../../core/models/game.model';
 import { MatTableModule } from '@angular/material/table';
 import { Subject, takeUntil } from 'rxjs';
 

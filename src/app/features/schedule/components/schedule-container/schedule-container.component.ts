@@ -3,7 +3,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { LeagueSelectComponent } from '../league-select/league-select.component';
 import { ScheduleComponent } from '../schedule/schedule.component';
 import { MatIconModule } from '@angular/material/icon';
-import { ScheduleService } from '../schedule.service';
+import { ScheduleService } from '../../services/schedule.service';
 
 @Component({
   selector: 'app-schedule-container',

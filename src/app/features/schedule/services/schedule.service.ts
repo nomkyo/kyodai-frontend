@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { League } from './league.model';
-import { Game } from './game.model';
+import { League } from '../../../core/models/league.model';
+import { Game } from '../../../core/models/game.model';
 
 @Injectable({
   providedIn: 'root',

@@ -9,8 +9,8 @@ import {
 } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { apiInterceptor } from './api.interceptor';
-import { ScheduleContainerComponent } from './schedule-container/schedule-container.component';
+import { apiInterceptor } from './core/interceptors/api.interceptor';
+import { ScheduleContainerComponent } from './features/schedule/components/schedule-container/schedule-container.component';
 
 @NgModule({
   declarations: [AppComponent],
