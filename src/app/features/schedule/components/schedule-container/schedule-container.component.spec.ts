@@ -7,7 +7,7 @@ import { Spectator, byTestId, createComponentFactory } from '@ngneat/spectator';
 import { League } from '../../../../core/models/league.model';
 import { faker } from '@faker-js/faker';
 import { By } from '@angular/platform-browser';
-import { MatOption, MatSelect } from '@angular/material/select';
+import { MatOption } from '@angular/material/select';
 import { Game } from '../../../../core/models/game.model';
 
 describe('ScheduleContainer', () => {

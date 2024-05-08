@@ -31,7 +31,7 @@ export class ScheduleContainerComponent implements OnInit, OnDestroy {
     this.scheduleService
       .getLeagueObs()
       .pipe(takeUntil(this.destroy$))
-      .subscribe((_) => {
+      .subscribe(() => {
         this.getSchedule();
       });
   }
@@ -53,7 +53,7 @@ export class ScheduleContainerComponent implements OnInit, OnDestroy {
         dialogRef.close();
         this.scheduleService.setGamesObs(schedules);
       },
-      (error) => {
+      () => {
         subscription.unsubscribe();
         //handle error
         dialogRef.close();
