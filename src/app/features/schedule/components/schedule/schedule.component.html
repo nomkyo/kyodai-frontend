@@ -6,11 +6,10 @@
 >
   @for (column of columns; track column) {
     <ng-container [matColumnDef]="column.columnDef">
-      <td mat-cell *matCellDef="let row" data-testid="schedule-cell">
+      <td mat-cell *matCellDef="let row">
         {{ column.cell(row) }}
       </td>
     </ng-container>
   }
-
   <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
 </table>

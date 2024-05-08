@@ -94,7 +94,16 @@ describe('ScheduleContainer', () => {
       controller.expectOne(scheduleUrl);
       controller.verify();
     });
+    it('loading-spinner shows when schedule button clicked', () => {
+      // Act
+      spectator.click(byTestId('schedule-btn'));
 
+      // Assert
+      const spinner1 = spectator.query(byTestId('loading-spinner'), {
+        root: true,
+      });
+      expect(spinner1).toBeTruthy();
+    });
     it('schedule-table displays the schedule', () => {
       const dateGame1 = new Date(expectedGames[0].startTime).toLocaleString();
       const dateGame2 = new Date(expectedGames[1].startTime).toLocaleString();

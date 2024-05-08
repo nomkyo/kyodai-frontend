@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, Observable, Subject } from 'rxjs';
 import { League } from '../../../core/models/league.model';
 import { Game } from '../../../core/models/game.model';
 
@@ -13,6 +13,14 @@ export class ScheduleService {
   private readonly scheduleUrl = 'schedule';
   private selectedLeague: League;
   private gamesObs$: BehaviorSubject<Game[]> = new BehaviorSubject<Game[]>([]);
+  private leagueObs$: Subject<League> = new Subject<League>();
+  getLeagueObs(): Observable<League> {
+    return this.leagueObs$.asObservable();
+  }
+
+  setLeagueObs(league: League) {
+    this.leagueObs$.next(league);
+  }
 
   getGamesObs(): Observable<Game[]> {
     return this.gamesObs$.asObservable();

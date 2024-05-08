@@ -19,6 +19,9 @@ export class LeagueSelectComponent implements OnInit {
   ngOnInit(): void {
     this.scheduleService.getLeagues().subscribe((leagues) => {
       this.leagues = leagues;
+      this.selectedLeague = this.leagues[0];
+      this.setLeague();
+      this.scheduleService.setLeagueObs(this.selectedLeague);
     });
   }
   setLeague() {
