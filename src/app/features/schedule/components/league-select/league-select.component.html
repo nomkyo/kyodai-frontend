@@ -1,0 +1,14 @@
+<mat-form-field data-testid="league-select-form">
+  <mat-label>Select an option</mat-label>
+  <mat-select
+    data-testid="league-select"
+    [(value)]="selectedLeague"
+    (selectionChange)="setLeague()"
+  >
+    @for (league of leagues; track league) {
+      <mat-option data-testid="league-option" [value]="league">{{
+        league.title
+      }}</mat-option>
+    }
+  </mat-select>
+</mat-form-field>
